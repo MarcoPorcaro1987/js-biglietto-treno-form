@@ -100,11 +100,27 @@ h5 {
 
 .container-biglietto p {
     padding: 5px 0;
+    font-size: 12px;
+   
 }
 
 .biglietto {
     display: none;
+    border-radius: 0;
 }
 .open {
     display: block;
 }
+
+.titolo {
+    font-size: 12px;
+}
+
+.grassetto {
+    font-weight: bold;
+}
+
+button:hover {
+    color: white;
+    cursor: pointer;
+} 
