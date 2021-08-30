@@ -33,7 +33,22 @@ btnGenera.addEventListener("click",
         document.getElementById("nome-passeggero").innerHTML = nome;
         document.getElementById("offerta").innerHTML= offerta;
         document.getElementById("carrozza").innerHTML = between(1, 9);
-        document.getElementById("cod-cp").innerHTML = between(1, 99999);
+        document.getElementById("cod-cp").innerHTML = between(1, 9999);
         document.getElementById("costo").innerHTML = prezzo.toFixed(2);
+
+        // mostro il biglietto
+
+        document.getElementById("biglietto").classList.add("open");
+        
+    }
+);
+
+// Bottone annulla
+btnAnnulla.addEventListener("click",
+    function(){
+        document.getElementById("biglietto").classList.remove("open");
+        document.getElementById("nome").value = "";
+        document.getElementById("km").value = "";
+        document.getElementById("fascia").value = "";
     }
 );
