@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Biglietto Treno</title>
+    </head>
+    <body>
+        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <div class="container-form">
+            <div class="form-biglietto flex center">  
+                <div class="nomecognome  flex column">
+                    <label for="nome">Nome e Cognome</label>
+                    <input type="text" name="nome" id="nome" placeholder="Inserisci il tuo nome">
+                </div>
+                    <div class="distanza  flex column">
+                    <label for="km" >Km da percorrere</label>
+                    <input type="number" name="km" id="km" placeholder="Inserisci i km">
+                </div>
+                <div class="fasciadeta  flex column">    
+                <label for="fascia">Fascia d'età</label>
+                    <select name="fascia" id="fascia">
+                        <option value=""></option>
+                        <option value="minorenne">Minorenne</option>
+                        <option value="maggiorenne">Maggiorenne</option>
+                        <option value="over">Over 65</option>
+                    </select>
+                </div>
+            </div>
+            <div class="bottoni-biglietto">
+                <button class="genera" id="genera">Genera</button>
+                <button class="annulla" id="annulla">Annulla</button>
+            </div>
+        </div>
+        <h2>IL TUO BIGLIETTO</h2>
+        <div class="container-form">
+            <h5>DETTAGLIO PASSEGGERI</h5>
+            <div class="container-biglietto flex">
+                <div class="generalità flex column">
+                    <h6>NOME PASSEGGERO</h6>
+                    <p id="nome-passeggero"></p>
+                </div>
+                <div class="offerta flex column">
+                    <p class="titolo">Offerta</p>
+                    <p id="offerta"></p>
+                </div>
+                <div class="carrozza flex column">
+                    <p class="titolo">Carrozza</p>
+                    <p id="carrozza"></p>
+                </div>
+                <div class="codice flex column">
+                    <p class="titolo">Codice CP</p>
+                    <p id="cod-cp"></p>
+                </div>
+                <div class="costo-biglietto flex column">
+                    <p class="titolo">Costo Biglietto</p>
+                    <p id="costo"></p>
+                </div>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
